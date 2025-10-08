@@ -25,11 +25,11 @@ body {
   display: flex;
   align-items: flex-start;
   height: 200px;
-  line-height: 1.29;
+  line-height: 1.29;    
 }
 
 .box1 {
-    flex-basis: calc((100% - 15px) / 6.01);
+    flex-basis: calc((100% - 15px) / 6);
 }
 .box2 {
     flex-basis: calc((100% - 15px) / 6 * 5);

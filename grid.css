@@ -20,7 +20,7 @@ body {
 .container {
     display: grid;
     
-    grid-template-rows: 49px 479px 101px 665px 133px;
+    grid-template-rows: 47px 478px 104px 665px 133px;
     grid-template-columns: 100px 751px 426px;
 
     grid-template-areas:

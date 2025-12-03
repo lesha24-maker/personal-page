@@ -11,7 +11,6 @@ img:nth-of-type(1) {
 body {
     background-image: none;
     opacity: 1;
-
     max-width: 1200px;
     min-height: 1583px;
     font-size: 2rem;
@@ -24,9 +23,13 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 47px 479px 104px 665px 132px;
+    grid-template-rows:
+        minmax(47px, auto)
+        minmax(479px, auto)
+        minmax(104px, auto)
+        minmax(665px, auto)
+        minmax(132px, auto);
     grid-template-columns: 200px 651px 427px;
-
     grid-template-areas:
     "one   two    two"
     "six   two    two"
@@ -45,25 +48,12 @@ body {
     color: #999;
 }
 
-.box2 {
-    grid-area: two;
-}
-
-.box3 {
-    grid-area: three;
-}
-
-.box4 {
-    grid-area: four;
-}
-
-.box5 {
-    grid-area: five;
-}
-
-.box6 {
-    grid-area: six;
-}
+.box2 { grid-area: two; }
+.box3 { grid-area: three; }
+.box4 { grid-area: four; }
+.box5 { grid-area: five; }
+.box6 { grid-area: six; }
+.box7 { grid-area: seven; }
 
 .box6 ul.top-menu {
     display: flex;
@@ -71,10 +61,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     background-color: #2c3e50;
 }
+
 .box6 li {
     font-family: 'Times New Roman', serif;
     font-size: 16px;
@@ -87,9 +78,5 @@ body {
 }
 
 .box6 li:last-child {
-    border-bottom: none; 
-}
-
-.box7 {
-    grid-area: seven;
+    border-bottom: none;
 }

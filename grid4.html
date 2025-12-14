@@ -8,31 +8,187 @@
     <link rel="stylesheet" href="grid4.css" class="style" />
 </head>
 <body>
-    <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 10;'>Style</button>
-
-    <img src='https://cdn.imgchest.com/files/wye3cdnxp4b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 1000;'>Style</button>
 
     <div class="container">
-        <div class="box hero">
-            <h1>Who is Who in Kyrgyzstan</h1>
-        </div>
-        
-        <div class="box1">
-            <img src="https://www.kto.kg/bundles/client/default/img/logo.svg" alt="kto kto logo">
+        <div class="box logo">
+            <img src="https://www.kto.kg/bundles/client/default/img/logo.svg" alt="KTO ЕСТЬ KTO">
         </div>
 
-        <div class="box2">2</div>
-        <div class="box3">3</div> 
-        <div class="box4">4</div> 
-        <div class="box5">5</div> 
-        <div class="box6">
-            <ul class="top-menu">
-                <li>Rating</li>
-                <li>Join</li>
-                <li>MENU</li>
+        <div class="box top-nav">
+            <div class="nav-left">
+                <a href="#" class="nav-link">ORGANIZATION</a>
+                <span class="nav-separator">|</span>
+                <a href="#" class="nav-link">PEOPLE</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">Rating</a>
+                <a href="#" class="nav-link">Join</a>
+                <a href="#" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04 0.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <a href="#" class="nav-link">MENU <span class="chevron">▼</span></a>
+            </div>
+        </div>
+
+        <div class="box hero">
+            <div class="hero-content">
+                <div class="hero-buttons">
+                    <a href="#" class="hero-btn">Add your profile</a>
+                    <a href="#" class="hero-btn">Subscribe</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="white">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04 0.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box menu">
+            <ul class="menu-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CUSTOM MENU</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
-        <div class="box7">7</div> 
+
+        <div class="box main-content">
+            <div class="time-nav">
+                <div class="time-links">
+                    <a href="#" class="time-link active">A week</a>
+                    <a href="#" class="time-link">Month</a>
+                    <a href="#" class="time-link">Year</a>
+                </div>
+                <div class="people-count">24857 people</div>
+            </div>
+            <hr class="divider">
+
+            <div class="profiles-grid">
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=AT" alt="Ashymbaeva Toktobubu Abasovna" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ashymbaeva Toktobubu Abasovna</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">11/14/1966</span>
+                            <span class="age">56 years old</span>
+                        </div>
+                        <p class="profile-desc">Deputy Minister of Education and Science of the Kyrgyz Republic</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=NN" alt="Niyazaliev Nuran Sadyrovich" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Niyazaliev Nuran Sadyrovich</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">1.4.1975</span>
+                            <span class="age">47 years old</span>
+                        </div>
+                        <p class="profile-desc">ex-First Deputy Minister of Foreign Affairs of the Kyrgyz Republic</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=BA" alt="Batyrbekova Aybarchyn Bakytbekovna" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Batyrbekova Aybarchyn Bakytbekovna</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">10.3.1991</span>
+                            <span class="age">31 year</span>
+                        </div>
+                        <p class="profile-desc">head of the press service of the Main Department of Internal Affairs of Bishkek, police captain</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=KR" alt="Kazakbaev Ruslan Aitbaevich" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Kazakbaev Ruslan Aitbaevich</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">18.5.1967</span>
+                            <span class="age">55 years old</span>
+                        </div>
+                        <p class="profile-desc">Ambassador Extraordinary and Plenipotentiary of the Kyrgyz Republic to Turkey</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=OK" alt="Omuraliev Kubanychbek Kasymovich" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Omuraliev Kubanychbek Kasymovich</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">15.9.1960</span>
+                            <span class="age">62 years old</span>
+                        </div>
+                        <p class="profile-desc">Secretary General of the Organization of Turkic States</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/100x100?text=EA" alt="Erkin Aidit" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Erkin Aidit</h3>
+                        <div class="profile-meta">
+                            <span class="date-badge">2.3.1972</span>
+                            <span class="age">50 years old</span>
+                        </div>
+                        <p class="profile-desc">Ambassador Extraordinary and Plenipotentiary of the Kyrgyz Republic to the Kingdom of Belgium</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box sidebar">
+            <div class="sidebar-header">
+                <h2>KYRGYZSTAN</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <ul class="sidebar-list">
+                <li><a href="#">The president</a></li>
+                <li><a href="#">Zhogorku Kenesh</a></li>
+                <li><a href="#">Cabinet of Ministers</a></li>
+                <li><a href="#">Ministries and departments</a></li>
+                <li><a href="#">Judicial system</a></li>
+                <li><a href="#">healthcare</a></li>
+                <li><a href="#">Strong structure</a></li>
+                <li><a href="#">Bishkek</a></li>
+                <li><a href="#">Osh</a></li>
+                <li><a href="#">Batken region</a></li>
+                <li><a href="#">Jalal-Abad region</a></li>
+                <li><a href="#">Issyk-Kul region</a></li>
+                <li><a href="#">Naryn region</a></li>
+                <li><a href="#">Osh region</a></li>
+                <li><a href="#">Talas region</a></li>
+                <li><a href="#">Chui area</a></li>
+                <li><a href="#">Science and education</a></li>
+            </ul>
+        </div>
+
+        <div class="box footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://www.kto.kg/bundles/client/default/img/logo.svg" alt="KTO ЕСТЬ KTO">
+                </div>
+                <div class="footer-center">
+                    <p>© News agency AKIpress, "Who is Who", 2003-2022. The materials posted on the Who's Who website are intended for personal use only. Public distribution of materials from printed and online publications is possible only with the written consent of the editors of "Who is who".</p>
+                </div>
+                <div class="footer-right">
+                    <p>Kyrgyzstan, Bishkek, Chyngyz Aitmatov Avenue, 299/5 (Map)</p>
+                    <p>akipresskto@gmail.com</p>
+                    <p>kto@akipress.org</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script>

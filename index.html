@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
-    <link rel="stylesheet" href="style.css" class="style" />
+    <link rel="stylesheet" href="/personal-page/style.css" class="style" />
 </head>
 <body>
     <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 1000;'>Style</button>
@@ -209,10 +209,10 @@
     <script>
         function switchStyle() {
             let style = document.querySelector('.style');
-            if (style.getAttribute('href') == 'style.css') {
-                style.setAttribute('href', 'style2.css');
+            if (style.getAttribute('href') == '/personal-page/style.css' || style.getAttribute('href') == 'style.css') {
+                style.setAttribute('href', '/personal-page/style2.css');
             } else {
-                style.setAttribute('href', 'style.css');
+                style.setAttribute('href', '/personal-page/style.css');
             }
             let menu = document.querySelector('.menu');
             if (menu) {
